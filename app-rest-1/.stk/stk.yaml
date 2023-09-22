@@ -1,0 +1,32 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-rest-1
+  description: app-rest-1
+  starter: coffee-studio/java-springboot-restapi-stack@1.0.0/rest-api-base
+  stack-version-id: 01HAZ77V0QJ28ENPE7WC713NNQ
+  stack: java-springboot-restapi-stack@1.0.0
+spec:
+  type: app
+  plugins:
+    - name: coffee-studio/java-springboot-restapi-stack@1.0.0/java-springboot-restapi-base-plugin@0.0.2
+      alias: java-springboot-restapi-base-plugin-1695412845357
+      plugin-version-id: 01H6XPQCNMVMY6EHAZVCE64S8P
+      stack-version-id: 01HAZ77V0QJ28ENPE7WC713NNQ
+      type: app
+      inputs:
+        project_name: app-rest-1
+        project_description: Simple REST API application with Java and Spring Boot
+        project_springboot_version: 2.7.2
+        project_group_id: br.com.zup.edu
+        project_artifact_id: demo
+        project_version: 0.0.1-SNAPSHOT
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/rafaelpontezup-organization/app-rest-1
